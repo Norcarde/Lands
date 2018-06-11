@@ -1,16 +1,14 @@
 ﻿namespace Lands.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
-    using Views;
     using Models;
-    using System;
     using System.Windows.Input;
+    using Views;
     using Xamarin.Forms;
 
     public class LandItemViewModel : Land
     {
         #region Commands
-
         public ICommand SelectLandCommand
         {
             get
@@ -24,7 +22,6 @@
             MainViewModel.GetInstance().Land = new LandViewModel(this);
             await Application.Current.MainPage.Navigation.PushAsync(new LandTabbedPage());
         }
-
         #endregion
     }
 }

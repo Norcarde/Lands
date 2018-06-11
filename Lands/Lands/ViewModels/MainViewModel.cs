@@ -1,12 +1,16 @@
 ﻿namespace Lands.ViewModels
 {
-    using Lands.Models;
     using System.Collections.Generic;
+    using Models;
 
     public class MainViewModel
     {
         #region Properties
-        public List<Land> LandsList;
+        public List<Land> LandsList
+        {
+            get;
+            set;
+        }
         #endregion
 
         #region ViewModels
